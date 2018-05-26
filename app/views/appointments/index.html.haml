@@ -1,12 +1,17 @@
-.container
-	%h1 My first Calendar used React and Rails
-	%h2 Appointments
-	%h3 Make a new appointment
+.container.text-center
+	.header
+		%h1 My first Calendar used React and Rails
+		%h2 Appointments
+		%h3 Make a new appointment
 
-	= form_for @appointment, remote: true do |f|
-		= f.text_field :title
-		= f.text_field :appt_time
-		= f.submit 'Make appointment'
+	.body
+		= form_for @appointment, remote: true do |f|
+			= f.text_field :title
+			= f.text_field :appt_time
+			= f.submit 'Make appointment'
 
-	#appointments
-		= render 'appointments'
+		#appointments
+			= render 'appointments'
+
+	.footer
+		%p	Copyright ©1989 - #{@copyright_date}. All rights reserved. Use of this site is subject to certain Terms and Conditions.
