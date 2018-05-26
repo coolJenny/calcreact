@@ -1,8 +1,11 @@
-.container.text-center
+.container-fluid
 	.header
-		%h1 My first Calendar used React and Rails
-		%h2 Appointments
-		%h3 Make a new appointment
+		.col-md-3
+			%h1 My first Calendar used React and Rails
+		.col-md-6
+			%h2 Appointments
+		.col-md-3		
+			%h3 Make a new appointment
 
 	.body
 		= form_for @appointment, remote: true do |f|
