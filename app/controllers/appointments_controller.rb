@@ -6,8 +6,7 @@ class AppointmentsController < ApplicationController
   end
 
   def create
-  	@appointment = Appointment.new(appointment_params)
-  	@appointment.save
+  	@appointment = Appointment.create(appointment_params)
   	@appointments = Appointment.order('appt_time ASC')
   end
 
