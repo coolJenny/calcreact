@@ -8,6 +8,10 @@ body {
 	line-height: 1.5;
 }
 
-.submit-button {
-	
+.header, .body, .footer{
+	margin-top: 20px;
+}
+
+a:hover{
+	text-decoration: none !important;
 }

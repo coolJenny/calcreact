@@ -1,14 +1,16 @@
 .container-fluid
 	.header.form-inline
 		.col-md-3
-			%img{:alt => 'Appointment', :width => '31', :height => '31', :src => '/assets/favicon.png'}/
+			%a{'href': '/'}
+				%img{'alt': 'Appointment', 'width': '31', 'height': '31', 'src': '/assets/favicon.png'}/
 		.col-md-6.text-center
-			%h1 Time is Money
+			%a{'href': '/'}
+				%h1 Time is Money
 		.col-md-3		
 			%h1 Some gadgets
 
 	.body
 		= react_component('Appointments', appointments: @appointments)
 
-	.footer
+	.footer.text-center
 		%p	Copyright ©1989 - #{@copyright_date}. All rights reserved. Use of this site is subject to certain Terms and Conditions.
