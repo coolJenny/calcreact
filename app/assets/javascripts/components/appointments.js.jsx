@@ -29,7 +29,7 @@ var Appointments = createReactClass({
 
 	render: function(){
 		return(			
-			<div className='container'>
+			<div>
 				<AppointmentForm title={this.state.title}
 					appt_time={this.state.appt_time}
 					onUserInput={this.handleUserInput}

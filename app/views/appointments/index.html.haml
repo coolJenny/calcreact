@@ -1,4 +1,4 @@
-.container-fluid
+%div
 	.header.form-inline
 		.col-md-3
 			%a{'href': '/'}
@@ -9,8 +9,11 @@
 		.col-md-3		
 			%h1 Some gadgets
 
-	.body
-		= react_component('Appointments', appointments: @appointments)
+	.body.form-inline
+		.col-md-3
+			= react_component('Appointments', appointments: @appointments)
+		.col-md-9
+			%h3 big date picker
 
 	.footer.text-center
 		%p	Copyright ©1989 - #{@copyright_date}. All rights reserved. Use of this site is subject to certain Terms and Conditions.

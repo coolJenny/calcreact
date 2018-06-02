@@ -8,8 +8,12 @@ body {
 	line-height: 1.5;
 }
 
-.header, .body, .footer{
-	margin-top: 20px;
+.header {
+	padding: 8px;
+}
+
+.body {
+	border-top: #e0e0e0 1px solid;
 }
 
 a:hover{
