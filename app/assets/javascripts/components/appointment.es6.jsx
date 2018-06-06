@@ -1,5 +1,5 @@
-var Appointment = createReactClass({
-	render: function(){
+class Appointment extends React.Component {
+	render (){
 		return(
 			<div>
 				<h3>{this.props.appointment.title}</h3>
@@ -7,4 +7,4 @@ var Appointment = createReactClass({
 			</div>
 		)
 	}
-});
+}
