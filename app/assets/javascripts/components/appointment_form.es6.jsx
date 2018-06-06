@@ -32,7 +32,7 @@ class AppointmentForm extends React.Component {
 							onChange={this.handleChange.bind(this)}
 							type='text' className='form-control' />
 						
-						<Datetime input={false} open={true} inputProps={inputProps} value={this.props.title} onChange={this.setApptTime.bind(this)} />
+						<Datetime input={false} open={true} inputProps={inputProps} value={this.props.appt_time} onChange={this.setApptTime.bind(this)} />
 
 						<input type='submit' value='Make Appointment' className='submit-button btn btn-primary' />
 					</div>

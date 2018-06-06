@@ -1,7 +1,7 @@
 class Appointments extends React.Component {
 	constructor(props){
-		super(props)
-		this.stae = {
+		super(props);
+		this.state = {
 			appointments: this.props.appointments,
 			title: 'Team meeting',
 			appt_time: 'Tomorrow at 9am'
