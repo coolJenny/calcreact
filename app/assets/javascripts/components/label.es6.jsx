@@ -2,7 +2,7 @@ class Label extends React.Component {
   render () {
     return (
       <React.Fragment>
-        Label: {this.props.label}
+        {this.props.label}
       </React.Fragment>
     );
   }

@@ -25,6 +25,7 @@ var AppointmentForm = createReactClass({
 		};
 		return(
 			<div>
+				<Label label='Enter a title, date and time' />
 				<form onSubmit={this.handleSubmit}>
 					<div className='form-group'>
 						<input name='title' placeholder='Appointment Title'
