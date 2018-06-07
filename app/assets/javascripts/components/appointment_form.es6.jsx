@@ -25,7 +25,7 @@ class AppointmentForm extends React.Component {
 		};
 		return(			
 			<form onSubmit={this.handleSubmit.bind(this)}>
-				<div className='form-group'>
+				<div className='form-group center-form'>
 					<input name='title' placeholder='Appointment Title'
 						value={this.props.title}
 						onChange={this.handleChange.bind(this)}
